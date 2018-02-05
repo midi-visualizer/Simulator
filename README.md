@@ -1,5 +1,7 @@
 # MIDI Visualizer - Simulator
 
+![Screenshot](./docs/assets/screenshot.png)
+
 ## Installation
 
 You will need to install `socat` and [`simple2d`](http://www.ruby2d.com/learn/get-started/) before running the application. Then call `bundle install` to set up the rest.
