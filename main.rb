@@ -11,7 +11,7 @@ SERIAL_BAUD = 115200
 ROWS    = 8
 COLUMNS = 8
 
-set title: "MIDI Vizualizer"
+set title: "MIDI Visualizer"
 
 grid = LightGrid.new num_rows: ROWS, num_columns: COLUMNS
 
