@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{This interface implements a simulator for the MIDI Visualizer project.}
   spec.description   = %q{This interface renders pixels in a grid for the MIDI Visualizer project.}
-  spec.homepage      = "https://github.com"
+  spec.homepage      = "https://github.com/midi-visualizer/Simulator"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
