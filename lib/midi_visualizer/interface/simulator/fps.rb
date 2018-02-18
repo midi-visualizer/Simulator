@@ -1,5 +1,3 @@
-require 'thread'
-
 module MIDIVisualizer
   module Interface
     class Simulator
