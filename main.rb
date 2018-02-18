@@ -26,16 +26,18 @@ fps = Fps.new x: 5, y: 5
 serial_thread =
   Thread.new do
     port = SerialPort.new dev_2, SERIAL_BAUD, 8, 1, SerialPort::NONE
-    port.read_timeout = 50
+    port.read_timeout = -1
     
     loop do
       d = port.read(256)
-      grid.write if d
+      #grid.write if d
+      puts d if d
       this_update = Time.now.to_f
       
       fps.set 1.0 / (this_update - last_update)
 
       last_update = this_update
+      #sleep 0.001
     end
   ensure
     port.close

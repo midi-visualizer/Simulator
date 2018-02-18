@@ -21,6 +21,7 @@ class LightGrid
     @colors = Array.new(num_rows * num_columns, 'random')
   end
 
+  # Actually update the colors
   def update!
     @semaphore.synchronize do
       # Transfer the contents of @colors to the buffers
