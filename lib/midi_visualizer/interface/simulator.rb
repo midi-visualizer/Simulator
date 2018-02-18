@@ -36,6 +36,9 @@ module MIDIVisualizer
         end
         
         Application.show
+      rescue Interrupt
+      ensure
+        Application.close
       end
     end
   end
