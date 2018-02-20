@@ -3,7 +3,8 @@ module MIDIVisualizer
     class Simulator
       class Fps
         def initialize(x:, y:)
-          @text = Text.new(x: x, y: y, text: text_from(0), size: 16, font: 'assets/Beon-Regular.otf')
+          @text = Text.new(x: x, y: y, text: text_from(0), size: 16,
+                           font: "#{File.expand_path("../../../../../assets", __FILE__)}/Beon-Regular.otf")
           @fps = 0
           @semaphore = Mutex.new
         end

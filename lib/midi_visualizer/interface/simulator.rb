@@ -8,6 +8,8 @@ require 'midi_visualizer/interface/simulator/fps'
 module MIDIVisualizer
   module Interface
     class Simulator
+      ASSETS_DIR = File.expand_path("../../../../assets", __FILE__)
+      
       attr_reader :rows, :columns
             
       def initialize(rows = 6, columns = 8)

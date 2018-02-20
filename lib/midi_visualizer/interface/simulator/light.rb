@@ -9,7 +9,9 @@ module MIDIVisualizer
           x -= offset
           y -= offset
 
-          @mask  = Image.new  x: x, y: y, z: 1, path: 'assets/light-mask.png'
+          assets_dir = File.expand_path("../../../../../assets", __FILE__)
+          @mask  = Image.new  x: x, y: y, z: 1,
+            path: "#{assets_dir}/light-mask.png"
           @light = Square.new x: x, y: y, size: MASK_SIZE, color: color
         end
 
